@@ -10,15 +10,19 @@ import {
   Navbar,
   Profile,
 } from "./components";
+import useStyles from "./components/styles";
+
 const App = () => {
+  const classes = useStyles();
+
   return (
-    <div>
+    <div className={classes.root}>
       <CssBaseline />
       {/* Since we want navbar to always be visible we use it above main */}
       <Navbar />
-      <main>
+      <main className={classes.content}>
         {/* switch comes from react router dom, and we will have different routes in switch */}
-
+        <div className="classes.toolbar" />
         <Switch>
           <Route exact path="/">
             <Movies />

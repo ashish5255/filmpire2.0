@@ -4,7 +4,6 @@ const Movies = () => {
   return (
     <div>
       <h1>movies</h1>
-      movies
     </div>
   );
 };
